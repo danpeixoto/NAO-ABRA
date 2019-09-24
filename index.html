@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Não Abra!</title>
+<style>
+    body{
+        display:flex;
+    }
+    button{
+        background-color: #fff;
+        border:2px solid midnightblue;
+        font-size: 72px;
+        cursor: pointer;
+        margin: 0 auto;
+        align-self: center;
+    }
+</style>
+</head>
+<body>
+    <button onclick="clicou()">Não clique em mim !!!!!!!</button>
+    <script>
+        function clicou(){
+            let botao = document.querySelector('button');
+            let body = document.querySelector('body');
+            botao.style.display = 'none';
+            body.style.backgroundImage = 'url(./caopao.jpg)';
+            body.style.backgroundRepeat = 'no-repeat';
+            body.style.backgroundSize = '100%';
+            document.querySelector('html').requestFullscreen();
+        }
+ 
+
+    </script>
+</body>
+</html>
